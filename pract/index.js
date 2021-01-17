@@ -1,21 +1,20 @@
-// const numberOfFilms = prompt('Скільки фільмів ви переглянули?');
+const numberOfFilms = prompt('Скільки фільмів ви переглянули?');
 
-// let personalMovieDB = {
-//   count : numberOfFilms,
-//   movies : {},
-//   actors : {},
-//   geners : [],
-//   privat : false
-// }
+let personalMovieDB = {
+  count : numberOfFilms,
+  movies : {},
+  actors : {},
+  geners : [],
+  privat : false,
+};
 
-// console.log(personalMovieDB);
+for(let i = 0; i < 2; i++){
+let firstQuest = prompt('Один із останніх фільмів, який ви дивились?');
+let secondQuest = prompt('На скільки ви оціните цей фільм?');
 
-const firstQuest = prompt('Один із останніх фільмів, який ви дивились?');
-const secondQuest = prompt('На скільки ви оціните цей фільм?');
+personalMovieDB.movies[firstQuest] = secondQuest;
+personalMovieDB.movies[firstQuest] = secondQuest;
 
-let movies = {
 }
 
-movies.filmsName = firstQuest;
-movies.filmsGrad = secondQuest;
- console.log(movies);
+console.log(personalMovieDB);
